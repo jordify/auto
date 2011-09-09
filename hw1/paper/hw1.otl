@@ -1,0 +1,47 @@
+Last Modified: Fri Sep 09, 2011 at 15:01
+
+Based off of Dist computing code
+Code
+	Unit tests!!
+	Start with node distance function
+	Three inputs N, k, and d
+		N - total nodes in system
+		k - number of neighbors to keep
+		d - dimensions to use in distance calculations (1 or 2)
+	Class Node(identifier)
+		Variables
+			myID <- identifier
+			k <- amount of neighbors to keep
+			neighbors <- Dictionary of nodeIDs, distance
+			bits <- address space
+		Methods
+			__init__(above) <- need to set up random neighbors in address space
+			FindDistance(nodeID) <- calculate distance to nodeID
+				Extend this for 1D and 2D distance calculations
+			ChooseNewNeighbors(newnNodesList) <- Calculate distances to new nodes and choose k closest
+			Gossip(nodeID) <- send node my neighbor list, receive theirs, run ChooseNewNegihbors
+			SumCurrentDistances() <- returns the current neighbor distances
+	Class Simulator(cycles, N, k, d, graph)
+		Variables
+			cycles
+			N
+			k
+			d
+			graph
+		Methods
+			__init__(above) <- network initialization phase
+			Simulate() <- network evolution phase
+Paper
+	Problem Statement
+		What was the assignment
+		Cite T-Man
+	Approach
+		How I solved the problem
+	Results and Figures
+		Interpretation of the figures
+		Plot of sum of distance by cycle
+		Graph of node connectivity at cycles 1, 5, 10, and 15
+	Conclusions
+		Short review and any thoughts to share
+Left TODO:
+	Learn gaphviz and make the extra credit graphs
