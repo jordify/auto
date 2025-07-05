@@ -2,3 +2,5 @@
 
 No worries... I won't push solutions until after due dates, plus you probably
 don't want to copy off of me.
+
+Thats funny
